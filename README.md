@@ -56,8 +56,8 @@ python text2translation.py
 
 ## Optimization
 
-1) 先用 realtime_dbfs.py 检测演讲者现场的声音分贝，
-按显示的数值预估修改 config.py 中的下面者两项值，可以优化语音的自动断句
+1) 先用 `realtime_dbfs.py` 检测演讲者现场的声音分贝，
+按显示的数值预估修改 `config.py` 中的下面者两项值，可以优化语音的自动断句
 
 ```python
 # 分贝值低于 -50 视为静音，
@@ -66,7 +66,7 @@ rec_silence_threshold_dbps = -50.0
 rec_speech_threshold_dbps = -27.0
 ```
 
-2) 在另外一台机器上运行 recording_single.py ，可以一直记录演讲者的声音，中途不会自动截断语句，便于以后重听、核对。
+2) 在另外一台机器上运行 `recording_single.py` ，可以一直记录演讲者的声音，中途不会自动截断语句，便于以后重听、核对。
 
 ```bash
 
@@ -74,6 +74,9 @@ python recording_single.py
 
 ```
 
+## 自动字幕
+
+1) 在 `srt/` 目录下会自动生成 字幕文件： `a.srt`
 
 
 
