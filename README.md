@@ -6,7 +6,7 @@
 
 1) clone:
 
-```python
+```bash
 
 git clone https://github.com/harryzhu/speech-minutes.git
 
@@ -26,7 +26,7 @@ cd speech-minutes
 
 1) 开启一个新的终端窗口，执行 `recording_sentence.py` 监听麦克风，实时听取演讲者的语音
 
-```python
+```bash
 
 python recording_sentence.py
 
@@ -48,7 +48,7 @@ python speech2text.py
 
 此功能需要本地部署 `Qwen3.5-2B-MLX-8bit` ，仅在高内存机器上运行较好。
 
-```python
+```bash
 
 python text2translation.py
 
@@ -68,7 +68,7 @@ rec_speech_threshold_dbps = -27.0
 
 2) 在另外一台机器上运行 recording_single.py ，可以一直记录演讲者的声音，中途不会自动截断语句，便于以后重听、核对。
 
-```python
+```bash
 
 python recording_single.py
 
