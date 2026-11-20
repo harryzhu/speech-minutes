@@ -57,7 +57,7 @@ python text2translation.py
 ## Optimization
 
 1) 先用 realtime_dbfs.py 检测演讲者现场的声音分贝，
-按显示的数值预估修改 config.py 中的下面者两项值，可以优化语音的自动短句
+按显示的数值预估修改 config.py 中的下面者两项值，可以优化语音的自动断句
 
 ```python
 # 分贝值低于 -50 视为静音，

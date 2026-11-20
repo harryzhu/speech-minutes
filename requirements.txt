@@ -1,0 +1,8 @@
+soundfile
+sounddevice
+librosa
+numpy
+mlx
+mlx-audio
+onnxruntime
+tqdm

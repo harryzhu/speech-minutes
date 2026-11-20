@@ -10,7 +10,6 @@ from glob import glob
 import numpy as np
 import sounddevice as sd
 import soundfile as sf
-from fastapi import FastAPI
 from config import *
 
 model_path_asr = "models/Qwen3-ASR-1.7B-8bit"
