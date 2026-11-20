@@ -6,12 +6,20 @@
 
 1) clone:
 
+```python
+
+git clone https://github.com/harryzhu/speech-minutes.git
+
+cd speech-minutes
+
+```
+
 
 2) 下载 模型 放在 models 文件夹下
 
-  ** Qwen3-ASR-1.7B
+  * [Qwen3-ASR-1.7B](https://www.modelscope.cn/models/Qwen/Qwen3-ASR-1.7B)
 
-  ** Qwen3.5-2B-MLX-8bit
+  * [Qwen3.5-2B-MLX-8bit](https://www.modelscope.cn/models/mlx-community/Qwen3.5-2B-MLX-8bit)
 
 
 ## Usage
