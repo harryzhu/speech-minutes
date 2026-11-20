@@ -21,6 +21,8 @@ cd speech-minutes
 
   * [Qwen3.5-2B-MLX-8bit](https://www.modelscope.cn/models/mlx-community/Qwen3.5-2B-MLX-8bit)
 
+  * [UVR](https://huggingface.co/hazhu/mlx-uvr-mdx-net)
+
 
 ## Usage
 
