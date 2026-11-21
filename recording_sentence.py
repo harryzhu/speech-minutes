@@ -66,7 +66,7 @@ async def recording(rec_buffer, seg_id):
             #
             f_t_duration = round(t_stop - t_start)
             rec_buffer = rec_buffer[:idx] 
-            out_file = f"wav/_src/a_{seg_id}_({f_t_duration})_[{t_start:.3f}-{t_stop:.3f}].wav"
+            out_file = f"wav/_src/a_{seg_id}_{f_t_duration}_[{t_start:.3f}-{t_stop:.3f}].wav"
             save_audio = np.concatenate([audio_empty, rec_buffer, audio_empty], axis=0)   
             q.put((out_file, save_audio))
             # reset
@@ -97,7 +97,7 @@ def file_saver():
         try:
             if q.qsize() > 0:
                 item = q.get()
-                sf.write(item[0], item[1], rec_samplerate)
+                sf.write(item[0], item[1], 44_100)
             else:
                 time.sleep(0.3)
         except Exception as err:

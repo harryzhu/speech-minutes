@@ -40,8 +40,8 @@ def separate_audio(file_path, output_dir):
     filename = os.path.splitext(os.path.split(file_path)[-1])[0]
     f_music = f"{output_dir}/music/{filename}.wav"
     f_vocal = f"{output_dir}/vocal/{filename}.wav"
-    sf.write(f_music, no_vocals, sampling_rate)
-    sf.write(f_vocal, vocals, sampling_rate)
+    sf.write(f_music, no_vocals, 44_100)
+    sf.write(f_vocal, vocals, 44_100)
 
     return f_music, f_vocal
 

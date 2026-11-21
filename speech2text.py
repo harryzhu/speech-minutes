@@ -66,13 +66,16 @@ def task_consumer():
     fpath = ""
     while True:
         flist = glob(f'wav/_src/a_{seg_id}_*.wav')
-        #print(flist)
+        if len(flist) == 0:
+            flist = glob(f'wav/vocal/a_{seg_id}_*.wav')
+        # print(flist)
         if len(flist) != 0:
             fpath = flist[0]
             fvocal = fpath.replace("wav/_src/", "wav/vocal/")
             if os.path.exists(fvocal):
                 fpath = fvocal
             # 等待0.3秒，避免ASR输出大量“嗯”
+            #print(fpath)
             time.sleep(0.3)
             wav2txt(fpath)
             seg_id += 1

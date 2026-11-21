@@ -76,6 +76,18 @@ python recording_single.py
 
 ```
 
+3）人声、背景音乐分离：嘈杂、背景音乐多的场景，可以在录制完成之后，分离出更清晰的人声，重新执行 `speech2text.py`，生成的文字更准确。
+
+```bash
+# 分离人声
+python extract_vocals.py
+
+# 重写识别语音
+python speech2text.py
+
+```
+
+
 ## 自动字幕
 
 1) 在 `srt/` 目录下会自动生成 字幕文件： `a.srt`
